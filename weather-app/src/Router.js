@@ -4,6 +4,7 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import DayPage from './DayPage';
 
 const BasicExample = () => (
   <Router>
@@ -16,7 +17,7 @@ const BasicExample = () => (
       <hr/>
 
       <Route exact path="/" component={Weekly}/>
-      <Route path="/day" component={Day}/>
+      <Route path="/day" component={DayPage}/>
     </div>
   </Router>
 );
@@ -30,12 +31,12 @@ const Weekly = () => (
   </div>
 );
 
-const Day = () => (
-  <div>
-    <h2>Daily Forecast</h2>
-    <p>It will be cloudy on Monday</p>
-  </div>
-);
+// const Day = () => (
+//   <div>
+//     <h2>Daily Forecast</h2>
+//     <p>It will be cloudy on Monday</p>
+//   </div>
+// );
 
 
 
